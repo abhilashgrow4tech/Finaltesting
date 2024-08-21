@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Firebase Authentication</title>
+</head>
+
+<body>
+    <input type="text" id="phoneNumber" placeholder="Enter phone number">
+    <button id="sendOtp">Send OTP</button>
+    <div id="recaptcha-container"></div> <!-- reCAPTCHA container -->
+    <div id="otpSection" style="display:none;">
+        <input type="text" id="otpCode" placeholder="Enter OTP">
+        <button id="verifyOtp">Verify OTP</button>
+        <div id="countdown"></div>
+    </div>
+
+    <script type="module" src="firebase-auth.js"></script>
+</body>
+
+</html>
